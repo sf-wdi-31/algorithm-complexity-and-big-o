@@ -216,7 +216,7 @@ function fibonacci(num) {
 
 ####Combinations
 
-Almost everything else is composed of combinations of the times we've looked at so far. For example, if a for loop has more complex operations inside it, time complexity is usually higher.
+There are a few other common Big O families (notably `O(n!)`), but many problems are composed of combinations of the times we've looked at so far. For example, if a for loop has more complex operations inside it, time complexity is usually higher.
 
 ```js
 function addAllArrays(arrayOfArrays){
