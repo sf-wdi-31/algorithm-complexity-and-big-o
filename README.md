@@ -106,7 +106,7 @@ features to help us characterize it.
 -   For branching statements (`if/else`), use the complexity of the worse
     branch.
 -   For loops, multiply the maximum number of times the loop can run by the complexity of the work inside the loop.
--   Simplify: eliminate constant multiples within parentheses (`O(2n)` -> `O(n)`) and entire smaller terms (`O(n) + 3*O(1)` -> `O(n)`).  Don't remove smaller terms that use a different name for the input size (`O(n) + O(log(m))` doesn't simplify).
+-   Simplify: eliminate constant multiples within parentheses (`O(2n)` -> `O(n)`), constant multiples of a single big-o family (`8*O(n)` -> `O(n)`), and entire smaller terms (`O(n) + 3*O(1)` -> `O(n)`).  Don't remove smaller terms that use a different name for the input size: `O(n) + O(log(m))` doesn't simplify.
 
 
 #### O(1)
